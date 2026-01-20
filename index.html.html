@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flying PTBR</title>
+  <style>
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background-color: #ffffff; color: #333; line-height: 1.6; }
+
+    /* Header */
+    header { background-color: #0077B6; color: #fff; padding: 20px 0; }
+    header nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; padding: 0 20px; }
+    header nav ul { display: flex; list-style: none; gap: 20px; }
+    header nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+    .cta-header { background-color: #FF6B35; padding: 10px 20px; border-radius: 5px; color: #fff; text-decoration: none; }
+
+    /* Banner Hero */
+    .hero { background: url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1950&q=80') no-repeat center/cover; height: 500px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
+    .hero p { font-size: 1.5rem; margin-bottom: 20px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+    .hero .cta { padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    .hero .cta-primary { background-color: #FF6B35; color: #fff; margin-right: 10px; }
+    .hero .cta-secondary { background-color: #0077B6; color: #fff; }
+
+    /* Seções */
+    section { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+    h2 { color: #0077B6; margin-bottom: 20px; }
+
+    /* Cards de Passagens e Milhas */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .card img { width: 100%; height: 150px; object-fit: cover; }
+    .card-content { padding: 15px; }
+    .card-content h3 { margin-bottom: 10px; color: #FF6B35; }
+    .card-content p { margin-bottom: 15px; }
+    .card-content a { display: inline-block; text-decoration: none; background-color: #0077B6; color: #fff; padding: 10px 15px; border-radius: 5px; }
+
+    /* Blog */
+    .blog-posts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+
+    /* Formulário */
+    .lead-form { display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: auto; }
+    .lead-form input { padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+    .lead-form button { padding: 12px; background-color: #FF6B35; border: none; border-radius: 5px; color: #fff; font-weight: bold; cursor: pointer; }
+
+    /* Depoimentos */
+    .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .testimonial-card { padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; }
+
+    /* Footer */
+    footer { background-color: #0077B6; color: #fff; padding: 30px 20px; text-align: center; }
+    footer a { color: #FF6B35; text-decoration: none; margin: 0 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo"><h2>Flying PTBR</h2></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#passagens">Comprar Passagens</a></li>
+        <li><a href="#milhas">Acumular Milhas</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="#passagens" class="cta-header">Compre Passagem</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Voe do Brasil a Portugal</h1>
+    <p>Encontre as melhores passagens e maximize seus pontos em programas de fidelidade</p>
+    <div>
+      <a href="#passagens" class="cta cta-primary">Compre sua passagem agora</a>
+      <a href="#milhas" class="cta cta-secondary">Aprenda a acumular milhas</a>
+    </div>
+  </section>
+
+  <!-- Comprar Passagens -->
+  <section id="passagens">
+    <h2>Passagens em promoção Brasil ↔ Portugal</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c3?auto=format&fit=crop&w=400&q=80" alt="TAP Airlines">
+        <div class="card-content">
+          <h3>TAP Airlines</h3>
+          <p>Voos diretos do Brasil a Portugal com tarifas promocionais.</p>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1545259742-97b1e7ee3e54?auto=format&fit=crop&w=400&q=80" alt="LATAM">
+        <div class="card-content">
+          <h3>LATAM</h3>
+          <p>Ofertas imperdíveis em voos Brasil ↔ Portugal.</p>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1560472354-6f16c6a92f17?auto=format&fit=crop&w=400&q=80" alt="Azul">
+        <div class="card-content">
+          <h3>Azul</h3>
+          <p>Voe com conforto e acumule milhas em cada viagem.</p>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acumular Milhas -->
+  <section id="milhas">
+    <h2>Ganhe milhas e pontos enquanto viaja</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601758123927-50a7faae0ed9?auto=format&fit=crop&w=400&q=80" alt="TAP Miles&Go">
+        <div class="card-content">
+          <h3>TAP Miles&Go</h3>
+          <p>Cadastre-se e maximize seus pontos em cada voo.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Smiles">
+        <div class="card-content">
+          <h3>Smiles</h3>
+          <p>Dicas de como transferir pontos e acumular milhas.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=400&q=80" alt="Livelo">
+        <div class="card-content">
+          <h3>Livelo</h3>
+          <p>Transforme pontos de cartão em milhas facilmente.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog">
+    <h2>Dicas e novidades de viagens</h2>
+    <div class="blog-posts">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405e3?auto=format&fit=crop&w=400&q=80" alt="Promoções semanais">
+        <div class="card-content">
+          <h3>Promoções semanais</h3>
+          <p>Confira as melhores ofertas de passagens desta semana.</p>
+          <a href="#">Leia mais</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Escolhendo seu voo">
+        <div class="card-content">
+          <h3>Como escolher seu voo</h3>
+          <p>Dicas para encontrar voos Brasil ↔ Portugal pelo melhor preço.</p>
+          <a href="#">Leia mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Leads -->
+  <section id="contato">
+    <h2>Receba ofertas exclusivas e dicas de milhas</h2>
+    <form class="lead-form">
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Preferência: Brasil → Portugal ou Portugal → Brasil">
+      <button type="submit">Quero receber ofertas</button>
+    </form>
+  </section>
+
+  <!-- Depoimentos -->
+  <section>
+    <h2>Clientes satisfeitos com Flying PTBR</h2>
+    <div class="testimonials">
+      <div class="testimonial-card">
+        <p>“Comprei minha passagem pela Flying PTBR e ainda acumulei milhas no TAP Miles&Go. Super prático!”</p>
+        <strong>- Ana S.</strong>
+      </div>
+      <div class="testimonial-card">
+        <p>“As dicas de milhas me ajudaram a economizar e planejar melhor minha viagem. Recomendo!”</p>
+        <strong>- Carlos M.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Flying PTBR. Todos os direitos reservados.</p>
+    <p>
+      <a href="#">Sobre nós</a> |
+      <a href="#">Contato</a> |
+      <a href="#">Política de Privacidade</a>
+    </p>
+  </footer>
+
+</body>
+</html>
